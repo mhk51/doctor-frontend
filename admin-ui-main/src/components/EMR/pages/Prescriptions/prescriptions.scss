@@ -1,0 +1,41 @@
+.prescriptions {
+  
+  
+  
+  
+  
+
+.bottoms {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative; /* Set absolute positioning */
+  
+
+  
+  button {
+    background-color: #0b6265;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 2rem;
+  }
+}
+.tables{
+ 
+width: auto;
+
+}
+.custom-textarea {
+  width: 100%; 
+  border: 1px solid #bdbdbd; 
+  padding: 8px; 
+  font-size: 0.9rem; 
+  border-radius: 4px; 
+  outline: none; 
+  margin-bottom: 5px;
+  &:focus {
+    border-color: #0B6265; 
+  }
+}}

@@ -1,0 +1,172 @@
+@import "../../../config/colors.css";
+.create-reminder {
+  display: grid;
+
+  grid-template-columns: 0.6fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+  grid-template-rows:  0.5fr 4fr;
+
+  height:100vh;
+  overflow:hidden;
+  background-color: #f5f5f5;
+  width:100%;}
+  .nav-reminder {
+    background-color: #fff;
+
+    color: #fff;
+  
+    padding:0px;
+  
+    padding-bottom:0px;
+  
+    padding-left:0px;
+  
+    grid-column: 2; /* Span across both columns */
+  
+    grid-row: 1;
+  
+    height:auto;
+  }
+
+  .side-reminder {
+    background-color: #fff;
+
+  color: #fff;
+
+  padding-top: 0px;
+
+  padding-left:0px;
+
+  padding-bottom:10px;
+
+  padding-right:0px;
+
+  grid-column: 1;
+
+  grid-row: 1/span 2;
+  }
+
+  .create-reminder-container {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #fff;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .message-box {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--light-color);
+      overflow-y: auto;
+      height: 75vh;
+      
+      border-radius: 5px;
+      padding: 2rem 1rem 1rem 2rem;
+
+      .row-1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btns {
+          width: 30%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+      .row-2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        p {
+          margin-right: 1.5rem;
+          font-size: small;
+        }
+        .edit {
+          margin-left: 1.5rem;
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+    .row-3 {
+      margin-top: 2rem;
+     width:100%;
+      display: flex;
+      justify-content: space-between; /* Adjust alignment as needed */
+      align-items: center;
+      .first {
+        display: flex;
+        flex: 3;
+        align-items: center;
+     
+        .col1 {
+          
+          p{
+            font-size: 1rem;
+          }
+        }
+        
+      }
+      .second {
+        flex: 2;
+      }
+    }
+   
+   
+  }
+
+.row-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-6 {
+  cursor: pointer; 
+  color: blue;
+}
+select{
+  padding: 5px;
+  flex: 1;
+  width: auto;
+  background-color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+.col2 {
+  display: flex;
+  flex: 1 !important;
+  gap: 10px;
+  justify-content: flex-start !important;
+}
+
+.btntasks {
+  background-color: transparent; 
+  color: #0B6265; 
+  border: 2px solid #0B6265;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 25px; 
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (max-width: 850px) {
+  .create-reminder {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+    grid-template-rows: 0.5fr 4fr;
+    height: 100vh;
+  }
+}

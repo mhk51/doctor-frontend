@@ -1,0 +1,138 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Ensure it's on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closealle {
+  width: auto;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: 5px;
+  cursor:pointer;
+}
+
+.aller {
+  overflow: auto; 
+  position: relative;
+  width: auto !important;/* Adjust the width to make it smaller */
+  background-color: white;
+  justify-content: space-around;
+  height: auto; /* Adjust the height to make it smaller */
+  position: absolute;
+  transition: all 0.4s;
+  z-index: 1;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .contentall {
+    padding: 1.95rem;
+    flex-direction: column;
+    display: flex;
+    height:auto;
+width:auto;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .center {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .dashed-box {
+        border: 1px dashed #B3B3B3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+
+        p {
+          font-size: 0.75rem;
+          margin-top: 0.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+    .appointment-details {
+      margin-bottom: 1rem;
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .bottom {
+    z-index: 1;
+    background-color: white;
+  
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2rem;
+
+    .row {
+      margin-right: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .custom-select {
+    width: 60%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #0B6265;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .mui-textarea {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      border-color: #0B6265;
+      box-shadow: 0 0 4px #0B6265;
+    }
+
+    &::placeholder {
+      color: #888;
+    }
+  }
+
+  text {
+    border-color: #0B6265;
+  }
+}
+@media (max-width: 850px) {
+  .contentall {
+    padding: 1rem;}
+}

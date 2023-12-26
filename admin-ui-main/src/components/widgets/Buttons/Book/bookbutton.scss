@@ -1,0 +1,10 @@
+@import "../../../../config/colors.css";
+
+.book-btn {
+  width: 35%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 0.95rem;
+}

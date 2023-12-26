@@ -1,0 +1,11 @@
+@import "../../../../config/colors.css";
+
+.add-btn {
+  width: auto;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem;
+  cursor: pointer;
+}

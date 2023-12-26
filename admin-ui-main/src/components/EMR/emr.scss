@@ -1,0 +1,44 @@
+@import "../../config/colors.css";
+
+.EMR {
+  .horizontal-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+    li {
+      padding: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      
+      &:not(:last-child) {
+        margin-right: 1rem; /* Margin between list items */
+      }
+    }
+    .active {
+      border-bottom: 2px solid var(--primary-color);
+    }
+  }
+  
+  
+ 
+    .content {
+      flex: 6;
+      height: auto;
+      width: auto;
+      padding: 1rem 1rem 2rem 1rem;
+      background-color: white;
+      
+    }
+  
+}
+
+@media (max-width: 850px) {
+  .horizontal-list {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+}

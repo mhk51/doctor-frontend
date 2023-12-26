@@ -1,0 +1,58 @@
+@import '../../../../src/config/colors.css';
+.custom-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+ 
+
+  
+  .medical-tests {
+
+    transition: all 0.3s ease;
+
+    .colll3 {
+      
+      border-radius: 5px;
+      padding: 0.5rem;
+      height: 30vh;
+      margin-right: 1rem;
+
+      
+.savees{
+ 
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    color: #dcdcdc;
+ 
+}
+.cancell{
+    background-color: var(--primary-color);
+          border-radius: 5px;
+          padding: 8px;
+          border: none;
+          color: #dcdcdc;
+}
+    
+    }
+
+    
+  }
+
+  
+  .cancel-and-saves {
+          display: flex;
+          justify-content: flex-start;
+    margin-top: 2rem !important;
+  }
+  @media (max-width: 850px) {
+    .medical-tests {
+    .colll3 {
+      
+      border-radius: 5px;
+      padding: 0.5rem;
+      height: auto;
+      margin-right: 1rem;
+    }}
+  }

@@ -1,0 +1,78 @@
+@import '../../../../src/config/colors.css';
+ 
+  .custom-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+ 
+  .pres-med {
+    
+    transition: all 0.3s ease;
+
+    .colll2 {
+      
+      border-radius: 5px;
+      padding: 0.5rem;
+      height: 30vh;
+      margin-right: 1rem;
+
+      
+      .new-note-section {
+       
+
+        .note-desc {
+          margin-top: 1rem;
+          
+          border: 1px solid var(--primary-color);
+          border-radius: 5px;
+        }
+
+        .cancel-and-save {
+         
+          margin-top: 1rem;
+        }
+      }
+.savee{
+    background-color: var(--primary-color);
+          border-radius: 5px;
+          padding: 9px;
+          border: none;
+          color: #dcdcdc;
+}
+.cancell{
+    background-color: var(--primary-color);
+          border-radius: 5px;
+          padding: 9px;
+          border: none;
+          color: #dcdcdc;
+}
+      .row {
+        margin-top: 2rem;
+        display: flex;
+        color: #929292;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    .col2 {
+     
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 90vh;
+    }
+  }
+
+  
+  @media (max-width: 850px) {
+    .pres-med {
+    .colll2 {
+      
+      border-radius: 5px;
+      padding: 0.5rem;
+      height: auto;
+      margin-right: 1rem;
+    }}
+  }

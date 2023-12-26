@@ -1,0 +1,98 @@
+.add-payment-page {
+    background-color: white;
+    .payment-header {
+      padding: 2rem;
+      border-bottom: 1px solid var(--menu-color);
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        h2 {
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    h2 {
+      font-weight: bold;
+    }
+    .payment-content {
+      overflow-y: hidden;
+      display: flex;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      padding: 2rem;
+      .col1 {
+        display: grid;
+        border-right: 1px solid #e6e6e6;
+        padding-right: 2rem;
+        .payment-row1 {
+          margin-bottom: 1.5rem;
+          .title {
+            display: flex;
+            margin-bottom: 2rem;
+            .number {
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              width: fit-content;
+              font-weight: bold;
+              padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        .payment-row2 {
+          .title {
+            display: flex;
+            margin-bottom: 2rem;
+            .number {
+              background-color: #f0f0f0;
+              border-radius: 10px;
+              width: fit-content;
+              font-weight: bold;
+              padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+          .payment-methods {
+            background-color: #f6f6f6;
+            border-radius: 5px;
+            padding: 2rem;
+            ul {
+              list-style: none;
+              padding-left: 0px;
+              li {
+                display: flex;
+                align-items: center;
+                
+              }
+            }
+          }
+        }
+      }
+      .col2 {
+        padding-left: 2rem;
+        .firstrow {
+          border-bottom: 1px solid #f0f0f0;
+          padding-bottom: 2rem;
+        }
+        .button {
+          display: flex;
+          justify-content: end;
+          margin-top: 2rem;
+          .payment-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,32 @@
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .pres {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    background-color: white;
+    justify-content: space-around;
+    height: auto;
+    position: absolute;
+    transition: all 0.4s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .contentpres {
+    padding: 1.95rem;
+    flex-direction: column;
+    display:flex;
+height:auto;
+width: auto;}

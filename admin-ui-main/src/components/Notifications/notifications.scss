@@ -1,0 +1,37 @@
+@import "../../config/colors.css";
+
+.notifications {
+  width: 25vw;
+  background-color: white;
+  justify-content: space-around;
+  height: 100vh;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+  .top {
+    padding: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+  .middle {
+    margin-top: 0.5rem;
+    text-align: center;
+  
+  span{
+    font-size: 0.75rem;
+    color: var(--activity-color);
+    font-weight: 800;
+  }
+  hr {
+    border: 0.075rem solid var(--second-color);
+    margin-top: 0.5rem;
+  }
+}
+}

@@ -1,0 +1,106 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+@import "../../config/colors.css";
+
+.e-table {
+  border: none;
+}
+
+.e-grid td.e-selectionbackground {
+  background-color: #d2d2d2;
+}
+.e-grid {
+  border: none;
+}
+
+.e-grid .e-toolbar {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+}
+.e-checkbox-wrapper .e-frame.e-check,
+.e-css.e-checkbox-wrapper .e-frame.e-check {
+  background-color: #0b6265;
+  color: #fff;
+}
+
+.e-checkbox-wrapper:hover .e-frame.e-check,
+.e-css.e-checkbox-wrapper:hover .e-frame.e-check {
+  background-color: #0b6265;
+  color: #fff;
+}
+
+.e-pager .e-currentitem,
+.e-pager .e-currentitem,
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover,
+.e-pager .e-currentitem::after,
+.e-pager .e-currentitem:active {
+  background-color: #0b6265;
+  color: #fff;
+  opacity: 1;
+}
+
+.e-grid .e-toolbar-items {
+  background-color: red;
+}
+.e-row .e-rowcell {
+  line-height: 9vh;
+}
+
+.e-row .e-rowcell:focus,
+.e-row .e-rowcell:active {
+  border: none;
+}
+
+.e-input-group:not(.e-float-icon-left),
+.e-input-group.e-success:not(.e-float-icon-left),
+.e-input-group.e-warning:not(.e-float-icon-left),
+.e-input-group.e-error:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+  border: 0px solid;
+  border-width: 0 0 0px 0;
+}
+
+.e-toolbar .e-toolbar-items:first-child > .e-toolbar-item:last-child,
+.e-toolbar
+  .e-toolbar-items:first-child
+  > .e-toolbar-right
+  .e-toolbar-item:last-child {
+  margin-right: 1rem;
+}
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+.e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::after,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+  .e-input-in-wrap::before,
+.e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+  .e-input-in-wrap::after {
+  background: var(--primary-color);
+}
+
+.e-grid .e-focused:not(.e-menu-item) {
+  box-shadow: 0 0 0 0;
+}
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+  background: var(--primary-color);
+  color: #fff;
+  opacity: 1;
+}
+
+.e-pager .e-currentitem.e-numericitem.e-focused {
+  background: var(--primary-color);
+}
+

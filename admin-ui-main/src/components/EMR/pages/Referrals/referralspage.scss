@@ -1,0 +1,93 @@
+.referral-page {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  .col1 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    margin-right: 1rem;
+
+    .btn-add {
+      width: 100%;
+      background-color: var(--light-color);
+      border: 1px dashed var(--primary-color);
+      font-weight: bold;
+      color: var(--primary-color);
+      padding: 0.7rem 1rem;
+      border-radius: 5px;
+      font-size: 1.0rem;
+    }
+    .row {
+      margin-top: 2rem;
+      display: flex;
+      color: #929292;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 1.5rem;
+    }
+  }
+  h4, h5{
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+  h2{
+    font-size: 0.75rem;
+    font-weight: bold;
+    color:#545454;
+  }
+  .col2-ref {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    overflow-y: auto;
+    }
+}
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 0.6em !important;
+  margin: 0 !important;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: auto;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding-top: 1px;
+  padding: 8.5px 14px;
+  font-size: 12px !important;
+}
+@media (max-width: 850px) {
+  .referral-page {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90%;
+    .col1 {
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      margin-right: 1rem;
+      width: 100%;
+    }
+    .col2 {
+      margin-top: 1rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      width: 100%;
+    }
+  }
+}

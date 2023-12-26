@@ -1,0 +1,123 @@
+
+
+.cs-message--outgoing .cs-message__content {
+  color: #ffff !important;
+  background-color: #4d9da0 !important;
+  border-radius: 0.7em !important; 
+}
+
+.cs-message--incoming .cs-message__content {
+  color: #ffff !important;
+  background-color: #0B6265 !important;
+  border-radius: 0.7em !important; 
+ 
+}
+
+
+// chatgpt.scss
+
+.Chatgpttt {
+  display: grid;
+
+  grid-template-columns: 0.6fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+  grid-template-rows:  0.5fr 4fr;
+
+  height:100vh;
+  overflow:hidden;
+  background-color: #f5f5f5;
+  width:100%;}
+
+  .navchatr {
+    background-color: #fff;
+
+    color: #fff;
+  
+    padding:0px;
+  
+    padding-bottom:0px;
+  
+    padding-left:0px;
+  
+    grid-column: 2; /* Span across both columns */
+  
+    grid-row: 1;
+  
+    height:auto;
+  }
+
+  .side-bar {
+    background-color: #fff;
+
+  color: #fff;
+
+  padding-top: 0px;
+
+  padding-left:0px;
+
+  padding-bottom:10px;
+
+  padding-right:0px;
+
+  grid-column: 1;
+
+  grid-row: 1/span 2;
+  }
+
+  .Chatgpt {
+    padding-left: 1%;
+    grid-column: 2;
+    grid-row: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--light-color);
+    height:80vh;
+    }
+  
+
+
+
+
+.cs-message-input__content-editor-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  background-color:#4d9da0 !important;
+  margin: 0;
+  padding: .6em .9em;
+  border-radius: .7em;
+  flex-grow: 1;
+}
+.cs-message-input__content-editor {
+  box-sizing: border-box;
+  flex-grow: 1;
+  background-color: #4d9da0 !important;
+  font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+  outline: 0;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  border-left: 0 none;
+  overflow: visible;
+  color: #ffff !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;}
+
+  .cs-button--attachment {
+    color: #ffff !important;
+    background-color: transparent;
+}
+
+.cs-button--send {
+  color: #4d9da0 !important;
+  background-color: transparent;
+}
+
+@media (max-width: 850px) {
+  .Chatgpttt {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+    grid-template-rows: 0.5fr 4fr;
+    height: 100vh;
+  }
+}

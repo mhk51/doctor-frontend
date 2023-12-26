@@ -1,0 +1,73 @@
+.recurrenceD {
+  width: 35vw;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  h3 {
+    font-size: 0.95rem;
+  }
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row2 {
+    display: flex;
+    margin-top: 2rem;
+    .col1 {
+      border-right: 1px solid #dadada;
+      padding-right: 2rem;
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-top: 1rem;
+
+        li {
+          font-size: small;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .col2 {
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        .details {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+
+          p {
+            margin-right: 1rem;
+            font-size: small;
+          }
+        }
+        .checkboxes {
+          margin-top: 1rem;
+          h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+          }
+          .box-content {
+            .box-details {
+              display: flex;
+              align-items: center;
+
+              p {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

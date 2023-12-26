@@ -1,0 +1,128 @@
+@import "../../../../config/colors.css";
+
+.profile {
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: grid;
+  
+  grid-template-columns: 0.6fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+  grid-template-rows:  0.5fr 4fr;
+
+  height:100vh;
+
+  background-color: #fff;
+  width:100%;
+  
+}
+.side-profile {
+
+  /* Style for the sidebar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding-top: 0px;
+
+  padding-left:0px;
+
+  padding-bottom:10px;
+
+  padding-right:0px;
+
+  grid-column: 1;
+
+  grid-row: 1/span 2;
+
+}
+.nav-profile {
+
+  /* Style for the navigation bar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding:0px;
+
+  padding-bottom:0px;
+
+  padding-left:0px;
+
+  grid-column: 2; /* Span across both columns */
+
+  grid-row: 1;
+
+  height:auto;
+
+}
+  .profile-container {
+    width: 90%;
+    grid-column: 2;
+grid-row: 2;
+padding:2%;
+gap:10px;
+    .box {
+      height: 100%;
+      display: flex;
+  
+      border-radius: 5px;
+      
+      .side-bar {
+        padding: 2rem 2rem 2rem 2rem;
+        width: 25%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: var(--primary-color);
+        .bold-item {
+          font-weight: bold;
+          color: var(--light-green);
+        }
+
+        .non-bold-item {
+          font-weight: normal; /* or any other preferred non-bold styling */
+        }
+        ul {
+          li {
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .right-side {
+        background-color: var(--light-color);
+      
+        border-radius: 5px;
+     
+        width: 70%;
+        .content {
+          .row {
+            display: flex;
+            flex-direction: column;
+          }
+          .long-row {
+            width: 100%;
+            .content {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .profile {
+     
+      display: grid;
+      grid-template-columns: 1fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+      grid-template-rows: 0.5fr 4fr;
+      height: 100vh;
+    }
+  }
+  

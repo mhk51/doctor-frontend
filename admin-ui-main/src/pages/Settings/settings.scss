@@ -1,0 +1,134 @@
+@import "../../config/colors.css";
+
+.settings {
+  display: grid;
+
+  grid-template-columns: 0.6fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+  grid-template-rows:  0.5fr 4fr;
+
+  height:100vh;
+
+  background-color: #fff;
+  width:100%;
+}
+.sidee {
+
+  /* Style for the sidebar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding-top: 0px;
+
+  padding-left:0px;
+
+  padding-bottom:10px;
+
+  padding-right:0px;
+
+  grid-column: 1;
+
+  grid-row: 1/span 2;
+
+}
+.Naveee {
+
+  /* Style for the navigation bar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding:0px;
+
+  padding-bottom:0px;
+
+  padding-left:0px;
+
+  grid-column: 2; /* Span across both columns */
+
+  grid-row: 1;
+
+  height:auto;
+
+}
+  .settings-container {
+    grid-column:2 ;
+
+  grid-row:2;
+    .settings-content {
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--light-color);
+      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+      border-radius: 5px;
+      padding: 2rem 2rem 2rem 2rem;
+
+      .row-1 {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+      }
+      .row-2 {
+        width: 100%;
+
+        .search-bar {
+          width: 70%;
+          margin-top: 1rem;
+          background-color: #ededed;
+          border-radius: 15px;
+          padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+          color: black;
+          .row {
+            display: flex;
+          }
+          .icon {
+            margin-right: 0.5rem;
+            align-self: center;
+            color: gray;
+          }
+          input {
+            width: 400px;
+            &::placeholder {
+              color: gray;
+            }
+          }
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .settings-bottom {
+        margin-top: 2rem;
+        .bottom-row-1 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .col1 {
+            display: flex;
+            p {
+              margin-left: 1rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .settings {
+      background-color: var(--light-color);
+      display: grid;
+      grid-template-columns: 1fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+      grid-template-rows: 1fr 4fr;
+      height: 100vh;
+    }
+  }
+  

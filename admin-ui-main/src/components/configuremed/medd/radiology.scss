@@ -1,0 +1,60 @@
+@import '../../../../src/config/colors.css';
+
+
+
+
+  .radiology-tests {
+    transition: all 0.3s ease;
+
+    .colll1 {
+    
+      border-radius: 5px;
+      padding: 0.5rem;
+      height: 30vh;
+      margin-right: 1rem;
+
+      
+
+      .new-test-section {
+      padding:0;
+       
+      .descriptionn {
+        margin-top: 1rem;
+        
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+      }
+
+        .cancel-and-save {
+        
+          margin-top: 1rem;
+        }
+      }
+.saveee , .cancel-button-rad{
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  color: #dcdcdc;
+}
+
+     
+    }
+
+    
+  }
+.descriptionn{
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  
+}
+@media (max-width: 850px) {
+  .radiology-tests {
+  .colll1 {
+    
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: auto;
+    margin-right: 1rem;
+  }
+}}

@@ -1,0 +1,64 @@
+/* Your existing CSS for the message-list container */
+
+.message-list {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;/* Align messages to the start by default */
+  
+  
+  }
+  
+  .sent-message,
+  .received-message {
+    width: auto; /* Occupy the full width */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    min-width: 15%;
+    margin-bottom: 16px;
+    border-radius: 15px; /* Increase border-radius for a rounded appearance */
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding and border in the total width */
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+    padding: 8px; /* Add padding for volume */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sent-message {
+    background-color: #d3ffc0;
+    align-self: flex-end;
+  }
+  
+  .received-message {
+    background-color: #FAF1F2; 
+    align-self: flex-start;
+  }
+  
+  .received-message .inner {
+    background-color: #a0a0a0; 
+    padding: 8px;
+  }
+
+  .sent-message .audio-sent,
+  .received-message .audio-received {
+    margin: -24px;
+    padding: 19px;
+    background-color: rgb(244, 243, 243);
+   
+  }
+  
+  .message-date {
+    font-size: 12px;
+    color: #515151; /* Adjust the color as needed */
+    margin-bottom: 8px; /* Adjust the spacing as needed */
+    background-color: #ffffff; /* White background color */
+    padding: 8px; /* Adjust the padding as needed */
+    border-radius: 8px; /* Add rounded edges */
+    align-self: center;
+    font-weight: bold;
+  }
+  
+  .message-time {
+    font-size: 10px; /* Adjust the font size as needed */
+    color: #888; /* Adjust the color as needed */
+    text-align: right;
+  }

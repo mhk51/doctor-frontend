@@ -1,0 +1,184 @@
+body{
+
+  background-color: #f5f5f5;
+
+}
+
+.container {
+
+  display: grid;
+
+  grid-template-columns: 0.6fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+  grid-template-rows:  0.5fr 4fr;
+
+  height:100vh !important;
+
+  background-color: #f5f5f5;
+  width:100%;
+
+}
+
+ 
+
+.side-bar {
+
+  /* Style for the sidebar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding:0;
+
+  grid-column: 1;
+
+  grid-row: 1/span 2;
+
+}
+
+ 
+
+.nav-bar {
+
+  /* Style for the navigation bar */
+
+  background-color: #fff;
+
+  color: #fff;
+
+  padding:0;
+
+  grid-column: 2; /* Span across both columns */
+
+  grid-row: 1;
+
+  height:10vh;
+
+}
+
+.cards{
+
+  grid-column:2 ;
+
+  grid-row:2;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+
+  padding: 0;
+
+}
+
+ 
+.appointment,
+
+.PatientInfo,
+
+.refrences,
+
+.task {
+
+  /* Style for individual cards */
+
+  background-color: #f5f5f5;
+  height:40vh;
+  padding: 0;
+
+}
+
+@media (max-width: 850px) {
+
+  .container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 4fr; /* Sidebar takes 1/4 and content takes 3/4 of the width */
+
+    grid-template-rows:  1fr 4fr;
+
+    height: 100vh;
+
+    background-color: #f5f5f5;
+
+ 
+
+  }
+
+ 
+
+  .side-bar {
+
+    /* Style for the sidebar */
+
+    background-color: #fff;
+
+    color: #fff;
+
+    padding:0;
+
+    grid-column: 1;
+
+    grid-row: 1/span 2;
+
+  }
+
+ 
+
+  .nav-bar {
+
+    /* Style for the navigation bar */
+
+    background-color: #fff;
+
+    color: #fff;
+
+ 
+
+    padding:0;
+
+    height: 10vh;
+
+    grid-column: 2; /* Span across both columns */
+
+    grid-row: 1;
+
+  }
+
+  .cards{
+
+    grid-column:2 ;
+
+    grid-row:2;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  }
+
+ 
+
+  .appointment,
+
+  .PatientInfo,
+
+  .refrences,
+
+  .task {
+
+    /* Style for individual cards */
+
+    background-color: #f5f5f5;
+height:20vh;
+    
+
+    padding:0.5em;
+
+ 
+
+  }}

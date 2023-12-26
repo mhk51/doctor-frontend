@@ -1,0 +1,96 @@
+.message-fields {
+    ul {
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      
+      li {
+        border: 1px solid #ccc; 
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #ffffff; 
+        
+        p {
+          margin: 0;
+          &:first-child {
+           
+            margin-bottom: 10px;
+          }
+        }
+        
+        .buttonn {
+          background-color: transparent; 
+          color: #0B6265; 
+          border: 2px solid #0B6265;
+          padding: 8px 20px;
+          cursor: pointer;
+          border-radius: 25px; 
+          transition: background-color 1s, color 1s, border-color 1s;
+          font-size: 11px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          outline: none;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          
+          &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: #0B6265;
+            transition: all 1s ease-out;
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) scale(0);
+          }
+          
+          &:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+          }
+          
+          &:hover {
+            color: white; 
+            border-color: transparent; 
+          }
+        }
+      }
+    }
+  }
+  .btntasks {
+    background-color: transparent; 
+    color: #0B6265; 
+    border: 2px solid #0B6265;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 25px; 
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .btntaskss{
+    
+    background-color: transparent; 
+    color: #0B6265; 
+    border: 2px solid #0B6265;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 25px; 
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    
+  }
+ 

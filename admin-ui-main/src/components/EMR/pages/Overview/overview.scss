@@ -1,0 +1,136 @@
+.overview {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  h3 {
+    font-size: 0.9rem;
+  }
+  .first-row{
+    grid-column: 1;
+    grid-row:1;
+    height: 400px;
+    width:400px;
+  }
+  .third-row{
+    grid-column:2;
+    grid-row:1;
+    height: 400px;
+    min-width:400px;
+  }
+  .second-row{
+    grid-column:1;
+    grid-row:2;
+    height: 400px;
+    width:400px;
+  }
+  .fourth-row{
+    grid-column:2;
+    grid-row:2;
+    height: 400px;
+    min-width:400px;
+  }
+  .fifth-row{
+    grid-column:1;
+    grid-row:3;
+    height: 400px;
+    width:400px;
+  }
+  .sixth-row{
+    grid-column:2;
+    grid-row:3;
+    height: 400px;
+    min-width:400px;
+  }
+}
+ 
+
+
+    
+
+.float-left{
+  font-size: 0.75rem;
+
+}
+.form-control {
+  
+  width: 6rem; 
+  height: 2rem; 
+  background-color: #0B6265; 
+  
+  color: #fff;
+ 
+  border: 1px solid #0B6265; 
+  border-radius: 5px; 
+ 
+
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+
+  &::before {
+    content: "Browse Files";
+    display: inline-block;
+    padding:  0.5rem 0.1rem;
+    background-color: #0B6265; 
+    color: #fff; 
+    border: 1px solid #0B6265; /* Border color */
+    border-radius: 0.25rem; /* Border radius using rem units */
+    cursor: pointer;
+  }
+
+ 
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  
+  font-weight: 400 !important;
+  font-size: 0.75rem !important ;
+  padding:0px !important;
+}
+
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  font-weight: 400 !important;
+  font-size: 0.75rem !important ;
+  padding:0px !important;
+}
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  padding:14px !important;
+}
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding:12px !important;
+}
+.custom-button {
+  width: auto; 
+  height: 2.1rem; 
+  background-color: #0B6265; 
+   border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 0.1rem;
+  border: 1px solid #0B6265; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.rowalle{
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 1rem;
+}
+
+@media (max-width: 850px) {
+
+  .overview {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+ 
+    h3 {
+      font-size: 0.9rem;
+    }
+    
+  }
+   
+}

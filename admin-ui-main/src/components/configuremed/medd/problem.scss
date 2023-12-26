@@ -1,0 +1,44 @@
+
+
+.colll1 {
+      
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 30vh;
+  margin-right: 1rem;}
+
+  .cancel-and-saved {
+         display: flex;
+         justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+.saveeze{
+background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    color: #dcdcdc;
+}
+.cancelzl{
+background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    color: #dcdcdc;
+}
+.note-descr {
+  margin-top: 1rem;
+  
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+@media (max-width: 850px) {
+  .colll1 {
+    
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: auto;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+#billings-personal {
+  padding: 1rem;
+  .billing-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .row2 {
+    margin-top: 2rem;
+    width: 75%;
+    .box {
+      padding: 2rem;
+      border: 0.5px solid rgb(199, 199, 199);
+      border-radius: 5px;
+      width: 100%;
+      .top {
+        margin-bottom: 1rem;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        .fourth-row {
+          display: flex;
+          margin-top: 1rem;
+          #btn1 {
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border: none;
+            color: white;
+            width: 45%;
+            font-weight: bold;
+            margin-right: 1rem;
+          }
+          #btn2 {
+            background-color: var(--light-color);
+            border-radius: 5px;
+            border: 0.5px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            width: auto;
+          }
+        }
+        .first-row,
+        .second-row,
+        .third-row {
+          margin-bottom: 1rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

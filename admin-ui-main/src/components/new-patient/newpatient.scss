@@ -1,0 +1,141 @@
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 999; /* Ensure it's on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PhoneInputCountryIcon{
+  width:10%;
+  height:10%;
+}
+.PhoneInput {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width:100%;
+  .PhoneInputInput {
+    width: 100%;
+    margin-left: 0.5rem;
+    height: 30px;
+    font-size: 12px !important;
+
+  }
+}
+.PhoneInputInput{
+background-color: #ffffff;
+    border: 1px solid #b9bcbe;
+    box-sizing: content-box;
+    width: 100%;
+    border-radius: 5px;}
+/*.PhoneInput{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}*/
+.patientdate{
+  min-width: 0; 
+  width:100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+}
+.new-patient-pop {
+  overflow: auto;
+  position: relative;
+  width: auto;
+  background-color: white;
+  justify-content: space-around;
+  height: auto;
+  position: absolute;
+  transition: all 0.4s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  .row {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .row-col2 {
+      width: 100%;
+      margin-left: 0.5rem;
+      
+    }
+  }
+  .long-row {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  h3 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+   margin-top:0.5rem;
+  }
+
+  .contentpa {
+    padding: 1.95rem;
+  flex-direction: column;
+  display:flex;
+height:auto;
+width:auto;
+
+    .top {
+      display: flex;
+
+      h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        
+      }
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  .section2,
+  .section3 {
+    margin-top: 1rem;
+  }
+  .closepatient {
+    width: auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+  .bottompatient {
+    height: 5rem;
+    z-index: 2;
+    background-color: white;
+    border-top: 0.15rem solid var(--lightgray-color);
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    
+    .rowpatient {
+      margin-right: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+  }
+}

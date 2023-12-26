@@ -1,0 +1,31 @@
+.usermess{
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.messitem {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .initials {
+    text-align: center;
+    line-height: 2rem; /* Vertically center the initials within the circle */
+  }
+
+  .message-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; 
+    height: 2rem; 
+    border-radius: 50%;
+    background-color: var(--primary-color); 
+    color: #fff; 
+    font-size: 0.75rem; 
+    font-weight: normal;
+    margin-right: 1rem; 
+    position: relative;
+  }

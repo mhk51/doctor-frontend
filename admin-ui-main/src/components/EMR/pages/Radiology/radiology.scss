@@ -1,0 +1,31 @@
+.radiology {
+ 
+  h2 {
+    font-size: 0.95rem;
+    font-weight: bold;
+  }
+  
+    .specialrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+     
+     
+    
+    }
+  
+
+.add-to-table {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  margin-right: 40px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--light-color);
+  font-weight: bold;
+  border: none;
+  width: auto;
+}}
+.radtablee{
+  width: auto;
+}

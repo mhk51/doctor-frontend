@@ -1,0 +1,11 @@
+@import "../../../../config/colors.css";
+
+.cancel-btn {
+  width: auto;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  border: solid 0.5px var(--black-color);
+  color: var(--black-color);
+  padding: 0.45rem;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.containerz {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background: #ffffff;
+  position: relative;
+  padding: 1.5rem;
+  border: 2px solid #B3B3B3;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+   }
+   .iconz {
+    
+    color: #545454;
+  }
+  @media (max-width: 850px) {
+    .PhoneInput {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width:100%;}
+  }

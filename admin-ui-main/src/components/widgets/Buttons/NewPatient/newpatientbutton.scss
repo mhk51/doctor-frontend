@@ -1,0 +1,10 @@
+@import "../../../../config/colors.css";
+
+.new-patient-btn {
+  width: 90%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}

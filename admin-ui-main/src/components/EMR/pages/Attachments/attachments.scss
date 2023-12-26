@@ -1,0 +1,211 @@
+.attachments-page {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  transition: all 0.3s ease;
+  .col1 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    margin-right: 1rem;
+    .btn-add {
+      width: 100%;
+      background-color: var(--light-color);
+      border: 1px dashed var(--primary-color);
+      font-weight: bold;
+      color: var(--primary-color);
+      padding: 0.7rem 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .new-attachment-section {
+      border: 1px dashed #dcdcdc;
+      padding: 1rem;
+      border-radius: 5px;
+
+      .cancel-and-save {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+    }
+    .row {
+      margin-top: 2rem;
+      display: flex;
+      color: #929292;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 1.5rem;
+    }
+  }
+  .col8 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+  }
+}
+@media (max-width: 850px) {
+  .attachments-page {
+    display:flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90%;
+    .col1 {
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      margin-right: 1rem;
+      width: 100%;
+    }
+    .col8 {
+      
+      height: 40vh;
+      padding: 1.5rem;
+      
+      width: 100%;
+      .selectopt{
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        color: #434343;
+        border-radius: 6px;
+        padding: 6px;
+        height: 35px;
+      
+      }
+      
+      .mui-like-table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #e0e0e0;
+      
+        th {
+          background-color: #f5f5f5;
+        }
+      
+        th, td {
+          border: 1px solid #e0e0e0;
+          padding: 16px;
+          text-align: left;
+        }
+      
+        tr:nth-child(odd) {
+          background-color: #f9f9f9;
+        }
+      
+        tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+      }
+      
+      
+      .mui-like-button {
+        background-color: #0B6265;
+        color: #ffffff;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+        text-align: center;
+       
+        &:hover {
+          background-color: #09393a;
+        }
+      }
+      
+      .table-container {
+        height: 35vh; 
+        overflow-y: scroll;
+        border: 1px solid #e0e0e0; 
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+      
+      .viewingfile{
+        background-color: #0B6265;
+        color: #ffffff;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.selectopt{
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #434343;
+  border-radius: 6px;
+  padding: 6px;
+  height: 35px;
+
+}
+
+.mui-like-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+
+  th {
+    background-color: #f5f5f5;
+  }
+
+  th, td {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    font-size: 0.85rem;
+    text-align: left;
+    
+    max-width: 150px; /* Set a maximum width for td elements */
+    overflow: auto; 
+    
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+}
+
+
+.mui-like-button {
+  background-color: #0B6265;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  white-space: nowrap;
+  text-align: center;
+
+  &:hover {
+    background-color: #09393a;
+  }
+}
+
+.table-container {
+  height: 80vh; 
+  overflow-y: scroll;
+  border: 1px solid #e0e0e0; 
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.viewingfile{
+  background-color: #0B6265;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}

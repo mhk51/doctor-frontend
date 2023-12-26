@@ -1,0 +1,104 @@
+.book-app {
+  overflow: auto;
+  position: relative;
+  width: 25vw;
+  background-color: white;
+  justify-content: space-around;
+  height: 100vh;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+  }
+  .content {
+    padding: 1.8rem 0rem 1.8rem 1.8rem;
+    .top {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      justify-content: flex-start;
+
+      .choose-patient,
+      .chief-complaint,
+      .new-patient {
+        margin-bottom: 1rem;
+      }
+      
+      hr {
+        border: 0.05rem solid var(--lightgray-color);
+      }
+
+      .second-section {
+        .first-row {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          .first-row-col2 {
+            width: 100%;
+            margin-left: 0.5rem;
+          }
+        }
+        .second-row,
+        .third-row {
+          margin-top: 0.5rem;
+        }
+      }
+      .third-section {
+        display: flex;
+        flex-direction: column;
+
+        #Type,
+        #link {
+          display: flex;
+          justify-content: flex-start;
+        }
+        .third-row {
+          display: flex;
+          align-items: center;
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+          p {
+            font-size: 0.9rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+      .fourth-section {
+        display: flex;
+        flex-direction: column;
+
+        .first-row {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 5rem;
+    z-index: 2;
+    background-color: white;
+    border-top: 0.15rem solid var(--lightgray-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+  }
+}

@@ -1,0 +1,89 @@
+.notes-page {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  transition: all 0.3s ease;
+  .col1 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    margin-right: 1rem;
+
+    .btn-add {
+      width: 100%;
+      background-color: var(--light-color);
+      border: 1px dashed var(--primary-color);
+      font-weight: bold;
+      color: var(--primary-color);
+      padding: 0.7rem 1rem;
+      border-radius: 5px;
+      font-size: 1.0rem;
+    }
+    .new-note-section {
+      border: 1px dashed #dcdcdc;
+      padding: 1rem;
+      border-radius: 5px;
+      .note-desc {
+        margin-top: 1rem;
+      }
+      .cancel-and-save {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+    }
+    
+  }
+  .col2 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    overflow-y: auto;
+display:flex;
+flex-direction: column;
+    .row {
+      
+      
+      
+      
+      
+      height: 30px;
+    }
+  }
+
+  h4, h5, p{
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+  h2{
+    font-size: 0.75rem;
+    font-weight: bold;
+    color:#545454;
+  }
+}
+
+@media (max-width: 850px) {
+  .notes-page {
+    display: flex;
+   flex-direction: column;
+    height: 90vh;
+    width: 90%;
+    .col1 {
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      margin-right: 1rem;
+      width: 100%;
+    }
+    .col2 {
+      margin-top: 1rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      width: 100%;
+    }
+  }
+}

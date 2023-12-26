@@ -1,0 +1,403 @@
+@import "../../config/colors.css";
+@import "../../../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-react-calendars/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-popups/styles/material3.css";
+@import "../../../node_modules/@syncfusion/ej2-react-schedule/styles/material3.css";
+
+.drag-sample-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+.edittt{
+    padding: 5px;
+    overflow-y:hidden;
+    width:300px;
+    height:auto;
+}
+.waitinglistp{
+    padding: 5px;
+    overflow-y:hidden;
+    width:300px;
+    height:auto;
+}
+.alldayy{
+    font-size: 15px;
+}
+.new-patientssss{
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: auto;  
+   
+}
+.new-patientss{
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: auto;   
+}
+.new-patient{
+    background-color: white;
+    width: auto;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+    overflow:hidden;
+}
+.new-patients{
+    background-color: white;
+    width: auto;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+}
+.schedule-container {
+    padding: 5px;
+    width: 100%;
+    max-height:500px;
+}
+
+.title-container {
+    padding-bottom: 10px;
+}
+.waiting{
+    background-color: #0B6265;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 6px;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the block element horizontally */
+    text-align: center; /* Center the text inside the button */
+}
+.treeview-external-drag #waiting {
+    height: 100%;
+    padding: 0;
+}
+treeview-external-drag
+.treeview-external-drag #waitdetails {
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding: 0;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .template-wrap {
+    padding: 3px 0px;
+}
+
+.title-text {
+    font-size: 15px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clinic-legend {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 5px;
+  }
+  
+  .clinic-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .color-box {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #000;
+  }
+  
+  .clinic-name {
+    font-size: 12px;
+  }
+  .bookcancel{
+    display: flex;
+    justify-content: flex-end;
+      margin-top: 20px;
+  }
+.treeview-external-drag #waitlist {
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    padding: 5px 0 0 10px;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+}
+.closeecancelll{
+  display: flex;
+  justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.closeddds {
+    border: none;
+    color: rgb(103, 80, 164);
+    padding: 10px;
+    background-color: transparent;
+    font-weight: 600;
+  }
+  .bottomwait{
+    z-index: 1;
+    background-color: white;
+  
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2rem;
+    margin-top:10px;
+  }
+  
+.closeddd{
+
+   background-color: #0B6265;
+   border: none;
+   color: #ffffff;
+   padding: 10px;
+   border-radius: 6px;
+}
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.waiting-list-popup{
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+}
+.treeview-external-drag #waitcategory {
+    height: 50%;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    opacity: 0.6;
+    padding-left: 10px;
+    padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.treeview-external-drag .e-list-text, .treeview-external-drag.e-rtl .e-list-text, .e-bigger .treeview-external-drag .e-list-text, .e-bigger .treeview-external-drag.e-rtl .e-list-text {
+    border: 0.5px solid #E1E7EC;
+    height: 50px;
+    line-height: 15px;
+    padding: 0 5px;
+    width: 220px;
+}
+
+.treeview-external-drag .e-list-parent, .treeview-external-drag.e-rtl .e-list-parent, .e-bigger .treeview-external-drag .e-list-parent, .e-bigger .treeview-external-drag.e-rtl .e-list-parent {
+    height: 100%;
+    padding: 0 2px;
+}
+
+.treeview-external-drag .e-list-item, .e-bigger .treeview-external-drag .e-list-item {
+    height: 100%;
+    padding: 0 0 5px 0;
+}
+.e-treeview > .e-ul {
+    
+    overflow: hidden;
+}
+.treeview-external-drag .e-fullrow, .e-bigger .treeview-external-drag .e-fullrow {
+    height: 55px;
+}
+.tree-container{
+    overflow-y:auto;
+}
+.treeview-external-drag .e-list-item.e-hover>.e-fullrow, .treeview-external-drag .e-list-item.e-active>.e-fullrow, .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-hover>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-active>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none !important;
+}
+
+.treeview-external-drag .e-text-content, .e-bigger .treeview-external-drag .e-text-content, .treeview-external-drag.e-rtl .e-text-content, .e-bigger .treeview-external-drag.e-rtl .e-text-content {
+    padding: 0;
+    background-color: inherit;
+}
+
+.e-drag-item.e-treeview.treeview-external-drag, .e-bigger .e-drag-item.e-treeview.treeview-external-drag {
+    padding: 0 !important;
+}
+
+.e-schedule.schedule-drag-drop .e-timeline-view .e-resource-left-td, .e-schedule.schedule-drag-drop .e-timeline-month-view .e-resource-left-td {
+    width: 160px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-category {
+    padding-left: 30px
+}
+
+.e-schedule.e-rtl.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-category {
+    padding-right: 30px
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-category, .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-name {
+    padding: 5px
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-name {
+    padding: 0 10px
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells .specialist-name {
+    font-size: 13px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells .specialist-designation {
+    font-size: 10px;
+}
+
+.e-schedule.schedule-drag-drop .specialist-image {
+    width: 45px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+
+.e-device-hover {
+    background-color: #e0e0e0 !important;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-image {
+    display: none;
+}
+input.e-input, textarea.e-input, .e-input-group, .e-input-group.e-control-wrapper {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.e-datetime-wrapper .e-time-icon.e-icons::before {
+    font-size: 12px;
+}
+.e-input-group-icon.e-date-icon::before, *.e-control-wrapper .e-input-group-icon.e-date-icon::before {
+    content: "\e778";
+    font-family: "e-icons";
+    font-size: 12px;
+}
+.duration-text {
+    font-size: 9px;
+    letter-spacing: 0.33px;
+    height: 10px;
+    padding-left: 50px;
+  }
+.quick-info-title {
+    
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.48px;
+    height: 20px;
+ padding-left: 100px;
+  }
+  .datetime-pickers {
+    display: flex;
+    margin-left: 10px; /* Optional: Add some spacing between the pickers */
+  }
+  .e-schedule .e-vertical-view .e-time-cells-wrap table td, .e-schedule .e-vertical-view .e-work-cells {
+    font-size: 10px;
+    height: 36px;
+    text-align: center;
+}
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-date-range .e-tbar-btn .e-tbar-btn-text {
+    font-size: 10px;
+    text-transform: initial;
+}
+.e-schedule .e-schedule-toolbar .e-tbar-btn .e-tbar-btn-text {
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: none;
+}
+.e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-prev .e-icon-prev, .e-schedule .e-schedule-toolbar .e-toolbar-items .e-toolbar-item.e-next .e-icon-next {
+    font-size: 12px;
+}
+
+.treeview-container {
+    max-height: 500px; /* Set your desired maximum height */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+}
+.e-quick-popup-wrapper {
+    background: linear-gradient(0deg, rgba(var(--color-sf-surface), 1), rgba(var(--color-sf-surface), 1)), rgba(var(--color-sf-surface));
+    border-radius: 0px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 0 rgba(var(--color-sf-black), 0), 0 0 rgba(var(--color-sf-black), 0);
+    color: rgba(var(--color-sf-on-surface));
+    
+    width: 300px;
+    opacity: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    
+    max-height:400px;
+    overflow-y:hidden;
+    border: 1px solid rgba(var(--color-sf-surface));
+}
+.e-quick-popup-wrapper .e-cell-popup .e-popup-content {
+    padding: 5px 20px 0 20px;
+}
+.cal{
+    width: auto !important;
+}
+.e-quick-popup-wrapper .e-popup-footer {
+    display: block;
+    padding: 16px 16px 16px 16px;
+    text-align: right;
+}
+@media (max-width: 850px) {
+    .drag-sample-wrapper {
+        display: block;
+    }
+    .e-quick-popup-wrapper {
+        max-width:200px;
+         
+        overflow: auto;
+    }
+
+    .treeview-container {
+        height: 200px;
+        overflow-y: auto;
+    }
+    .schedule-container {
+        padding-bottom: 10px
+    }
+    .treeview-external-drag.e-treeview, .e-bigger .treeview-external-drag.e-treeview {
+        width: auto;
+    }
+    .e-bigger .treeview-external-drag.e-treeview.e-drag-item {
+        position: relative !important;
+    }
+}
+.e-disble-not-allowed {
+   cursor: unset !important;
+}
+
+.e-drag-item.treeview-external-drag .e-icon-expandable {
+   display: none;
+}

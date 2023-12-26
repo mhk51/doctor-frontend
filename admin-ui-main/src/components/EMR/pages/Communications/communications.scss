@@ -1,0 +1,52 @@
+.communications-page {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  .col1 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+    margin-right: 1rem;
+
+    .row {
+      margin-top: 0.5rem;
+      display: flex;
+      color: #929292;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 1.5rem;
+    }
+  }
+  .col2 {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    height: 90vh;
+  }
+}
+@media (max-width: 850px) {
+  .communications-page {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr 2fr;
+    height: 90vh;
+    width: 90%;
+    .col1 {
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      margin-right: 1rem;
+      width: 100%;
+    }
+    .col2 {
+      margin-top: 1rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      padding: 1.5rem;
+      height: 40vh;
+      width: 100%;
+    }
+  }
+}

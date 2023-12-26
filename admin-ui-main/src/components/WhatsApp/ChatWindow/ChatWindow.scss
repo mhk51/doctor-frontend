@@ -1,0 +1,225 @@
+
+.chat-container {
+  width: 100%;
+  flex: 6;
+  height: 695px;
+    
+    
+  }
+  .patient-bar {
+    background-color: #1A725C; /* Green background color */
+    color: white; /* White text color */
+    text-align: left;
+    padding: 20px; /* Add some padding */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
+  
+  .whatsapp-input-bar {
+    position: fixed;
+    background-color: #F5F5F5;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 67%;
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow at the bottom */
+    z-index: 1000;
+  }
+  
+  .text-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .attachment-button,
+  .send-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .attachment-button:hover,
+  .send-button:hover {
+    background-color: #e0e0e0;
+    border-radius: 50%;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #777;
+  }
+  
+  .attachment-popup {
+    position: fixed;
+    top:  77vh;
+    left: 36vw;
+    transform: translateX(-50%);
+    background-color: #ededed;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1; 
+  }
+  
+  
+  .attachment-popup button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .attachment-popup button:hover {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  
+
+.location-popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-details {
+    margin-bottom: 12px;
+  }
+  
+  .location-details p {
+    margin: 0;
+  }
+  
+  .location-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .send-icon,
+  .close-icon {
+    background-color: #1A725C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-icon:hover,
+  .close-icon:hover {
+    background-color: #104336;
+  }
+
+    
+ .media-popup {
+  position: absolute;
+  top: -10vh;
+  left: 10vw;
+  transform: translateX(-50%);
+  background-color: #ededed;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row; /* Change flex-direction to row */
+  justify-content: space-between; /* Add space between buttons */
+  align-items: center; /* Center items vertically */
+  gap: 8px;
+  z-index: 1000; 
+}
+
+.media-popup button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.media-popup button:hover {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.media-popup button {
+  color: black; /* Set the color of the icons to black */
+}
+
+.recording-status {
+    display: flex;
+    width: 100%;
+    align-items: center; /* Center vertically */
+  }
+  
+  .recording-status-text {
+    flex-grow: 1; /* Allow the text to take available space and push buttons to the right */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .recording-buttons {
+    margin-left: auto; /* Move the buttons to the right */
+  }
+  
+  .recording-status button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    gap: 8px;
+  }
+  
+  .recording-status button:hover {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .send-template-button {
+    background-color: #1A725C; /* Green color */
+    color: #ffffff; /* White text color */
+    padding: 10px 16px; /* Adjust padding as needed */
+    border: none;
+
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .send-template-button:hover {
+    background-color: #0d5a51; /* Darker green on hover */
+  }
